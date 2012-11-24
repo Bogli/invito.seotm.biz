@@ -1,0 +1,413 @@
+/*
+  main.css,v 1.0 2012
+  http://www.seotm.com
+  Copyright(c) 2012 SEOTM
+*/
+
+
+/*Settings*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {  background: #f0f0f0 url("/images/design/body.gif") repeat-x; color: #000000; font: normal 0.69em Arial, Verdana, sans-serif; }
+p {font-size: 12px; margin: 4px 0px;}
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+a { color: #0073b3; text-decoration: none; font-weight: normal; }
+a:hover {text-decoration: underline;}
+table td { font-size: 12px;}
+form {display: inline;}
+li {padding: 3px 0px;}
+input[type="text"] {padding: 2px 0px 1px 0px; border: 1px solid #d1d1d1; width: 215px; }
+textarea {padding: 2px 0px 1px 0px; border: 1px solid #d1d1d1; width: 345px; }
+select {padding: 2px 1px 1px 3px; border: 1px solid #d1d1d1; width: 220px;  height: 25px;   color:#646464; font-size: 13px; }
+
+.inputRequirement { font-family: Verdana, Arial, sans-serif; font-size: 10px; color: #ff0000; }
+.select{width: 35px; }
+.err_box { border:1px solid #FFC0C0; background-color:#FFDDDD; padding:15px; margin:5px; width:50%; float: center; }
+.err_title{ font-size: 12px; padding-bottom: 2px; }
+.err_text { font-size: 10px; }
+.msg_box { border:1px solid #C0FFC0; background-color:#D9FFD9; padding:15px; margin:5px; width:50%; float: center; }
+.msg_text { }
+.wrn_box { border:1px solid #FFFF80; background-color:#FFFFCC; padding:15px; margin:5px; width:50%; float: center; }
+.wrn_text { }
+.width10 {width:10%;}
+.width15 {width:15%;}
+.width25 {width:25%;}
+.width33 {width:33.3%;}
+.width50 {width:50%;}
+.width75 {width:75%;}
+.width85 {width:85%;}
+.width90 {width:90%;}
+.left, .floatToLeft{float:left;}
+.right, .floatToRight{float:right;}
+.clear, .clearing {clear:both;}
+.hide {display: none;}
+.red {color:#f80710;}
+.err { background: #ffe6e7; padding: 15px 10px; text-align: center; border: 1px solid #ffbabd; margin: 10px;}
+.floatContainer {padding: 3px 0px; overflow: hidden; color:#646464; font-size: 13px; font-family: Arial; }
+/*End Settings*/
+
+
+/*Whole site*/
+#wrapper { position: relative; width: 950px; padding: 0px 20px; margin: 60px auto 20px auto; background: #FFF; border: 1px solid #dddddd; overflow: hidden;}
+.bodyRight{float: right; width: 250px; margin-left: 20px;}
+.bodyCenter {overflow: hidden;}
+#contentBox { width: 496px; padding: 0px 22px; overflow: hidden;}
+#content2Box h1 {font-size: 18px; color:#040404; padding: 30px 0px; font-weight: normal;}
+#content2Box h2 { color:#006bab; padding: 5px 0px; }
+#content2Box .path {font-size: 12px; color:#5a5a5a; padding-bottom: 15px;}
+.subBody {font-size: 12px; color:#5a5a5a; text-align: justify;}
+#content2Box ul {padding: 3px 0px 3px 15px;}
+#content2Box ul li {padding: 3px 0px 3px 5px;}
+/*End Whole site*/
+
+
+/*Block LangNavBox*/
+#langNavBox {padding: 10px 0px 0px 26px; height: 25px;}
+#langNavBox ul { list-style: none outside none;margin: 0;  padding: 0;}
+#langNavBox ul li { font-size: 12px; border-left: 1px solid #008ab8; float: left; line-height: 120%; padding: 0 5px;}
+#langNavBox ul li:first-child, #langNavBox ul .first-child  {border: 0 none;}
+/* End Block LangNavBox*/
+
+
+/*Block Top Icons*/
+.topIcons {position: absolute; width: 75px; height: 20px; top:8px; right: 185px;  }
+.topIcons a {float:left; display:block; margin-right:6px; height:19px; width:19px; text-decoration: none; }
+.topIcons a.icoMap {background: url("/images/design/icoMap.png") bottom left no-repeat; }
+.topIcons a.icoMap:hover {background: url("/images/design/icoMap.png") top left no-repeat; }
+.topIcons a.icoMail {background: url("/images/design/icoMail.png") bottom left no-repeat; }
+.topIcons a.icoMail:hover {background: url("/images/design/icoMail.png") top left no-repeat; }
+.topIcons a.icoHome {background: url("/images/design/icoHome.png") bottom left no-repeat; }
+.topIcons a.icoHome:hover {background: url("/images/design/icoHome.png") top left no-repeat; }
+/*End Block Top Icons*/
+
+
+/*Block Меню*/
+.menu a {color:#fff; font-family: Georgia; font-size: 15px;  text-decoration: none; display: block; padding: 13px 0px 12px 0px; height: 19px;}
+.menu a.current, .menu a:hover {color:#fadf00;}
+
+.horizontalMenu {
+    text-align: justify;
+
+    /* Обнуляем для родителя*/
+    line-height: 0;
+    font-size: 1px; /* 1px для Opera */
+
+    /* Лекарство для IE6-7*/
+    text-justify: newspaper;
+    zoom:1;
+
+    /* Включаем в работу последнюю строку*/
+    text-align-last: justify;
+}
+ul.horizontalMenu:after {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+
+}
+.horizontalMenu li  {
+    margin: 0; padding: 0;  position:relative;
+      /* Для WebKit (Safari, Google Chrome и т.д.) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#7f3e2c), to(#56261b));
+    /* Для Mozilla/Gecko (Firefox и т.д.) */
+    background: -moz-linear-gradient(top, #7f3e2c, #56261b);
+    /* Для Opera 11.10+ */
+    background: -o-linear-gradient(top,  #7f3e2c,  #56261b);
+    /* Для Internet Explorer 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f3e2c, endColorstr=#56261b);
+    /* Для Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f3e2c, endColorstr=#56261b)";
+    display: inline-block;
+    text-align: left;
+    /* Востанавливаем у потомков, кроме последнего*/
+    line-height: normal;
+    font-size: 14px;
+    padding: 0px 10px;
+
+    /* Без него в Opera будет отступ под элементами */
+    vertical-align: top;
+
+    /* эмуляция inline-block для IE6-7*/
+    //display : inline;
+    //zoom : 1;
+}
+.horizontalMenu li ul{display:none;position: absolute;left:0px;}
+.horizontalMenu li ul li{width:170px;display: block;}
+.horizontalMenu ul li>ul{left:170px;top: 0px;}
+.horizontalMenu li:hover>ul{display: block;}
+
+.verticalMenu  ul {padding: 0 0 25px 0; margin: 0; list-style: none;}
+.verticalMenu  ul li:first-child {border-top: 1px dashed #c7948e; }
+.verticalMenu  ul li { background: url("/images/design/icoLeftMenu.png") 8px 14px no-repeat;  padding: 10px 8px 10px 18px; border-bottom: 1px dashed #c7948e; }
+.verticalMenu  ul li a {font-size: 16px; font-family: Georgia;}
+.verticalMenu  ul li a.current, .verticalMenu  ul li a:hover {color:#000;}
+
+/*End Block Меню*/
+
+
+
+/*Block Параметри*/
+.catalogCaption {margin: 3px 20px 0px 0px;  padding: 0px 0px 10px 27px; background: url("/images/design/catalogCaption.gif") left 4px no-repeat; border-bottom:  1px solid #ededed;  font-size: 23px;  color:#3d3d3d; }
+h1.catalogOrder {margin: 0px 20px 0px 0px;  padding: 0px 0px 10px 27px; background: url("/images/design/catalogCaption.gif") left 4px no-repeat; border-bottom:  1px solid #ededed;  font-size: 23px;  color:#3d3d3d; font-weight: normal; }
+.catalogCaptionRight {margin: 30px 0px 0px 0px;  padding: 0px 0px 10px 25px; background: url("/images/design/catalogCaption.gif") left 4px no-repeat; border-bottom:  1px solid #ededed;  font-size: 23px;  color:#3d3d3d;}
+.selectedParams {padding: 10px 0px 10px 0px; border-bottom:  1px solid #EDEDED; margin-right: 20px; }
+.countParams {padding: 3px 0px; font-size: 12px;}
+a.btnDeleteParam {font-size: 12px; color: #003984; line-height: 18px;  background: url("/images/design/btnDeleteParam.gif") left 3px no-repeat; padding-left: 15px; text-decoration: none; }
+a.btnDeleteParam:hover {text-decoration:underline;}
+a.filters_off {font-size: 13px; color: #FF0000; line-height: 18px; background: url("/images/design/off_filters.gif") left 14px no-repeat; padding: 10px 0px 0px 15px; display: block; }
+.paramName {font-size: 16px; padding: 15px 0px 5px; color:#000; }
+.paramKey a {font-size: 12px; color:#003984; line-height: 18px; background: url("/images/design/check-no.gif") left top no-repeat; padding-left: 15px; text-decoration: none; }
+.paramKey a:hover {text-decoration: underline;}
+.param_all a, .param_all{ font-size: 12px; color:#aaaaaa; line-height: 18px;}
+a.paramSelected, .paramSelected {font-size: 12px; color: #FF0000; line-height: 18px; background: url("/images/design/check-yes.gif") left top no-repeat;}
+.tblPriceLevel td {color:#003984;}
+.tblPriceLevel input[type="text"] {width: 41px; height: 20px; text-align: center; padding: 1px 4px 0px 4px;}
+.tblPriceLevel input[type="image"] {padding: 1px 0px 0px 0px; }
+/*End Block Параметри*/
+
+/*SEO*/
+.headerSEO {min-height: 10px; padding-top:2px; font-size: 10px; text-align: center; color:#808080;}
+.footerSEO {min-height: 10px; padding:0 5px 5px 5px; font-size: 10px; text-align: center; color:#808080;}
+/*End SEO*/
+
+
+/*Module Articles*/
+#lastArticles {width: 320px; float: left; margin-right: 10px; overflow: hidden;}
+#lastArticles a.name {color:#007e50; font-size: 16px; font-weight: bold;}
+#lastArticles .short {font-size: 12px; padding: 3px 0px; text-align: justify;}
+#lastArticles .item {padding: 10px 0 10px 0; overflow: hidden;}
+#lastArticles .image {width: 100%; text-align: center; overflow: hidden; padding-bottom: 5px;}
+#lastArticles img {padding: 2px; border: 1px solid #e7e6e1;}
+#articles .item {padding: 10px 0 10px 0; overflow: hidden; border-bottom: 1px solid #f2f2ef;}
+#articles a.name {color:#007e50; font-size: 16px; font-weight: bold;}
+#articles h2 {font-size: 18px; font-weight: bold; color:#007e50;    }
+#articles .image {float: left;}
+#articles .data {margin-left: 150px; overflow: hidden;}
+#articles img {padding: 2px; border: 1px solid #e7e6e1;}
+#articles .short { padding: 3px 0px; }
+.dateArticles {color:#d25b07; font-size: 11px;}
+.dateArticles a {color:#d25b07;}
+a.detail {color:#00a76f; font-weight: bold; font-size: 11px; }
+/*End Module Articles*/
+
+
+/*Module News*/
+.newsSpacer, .newsSpacer15 {border-bottom:1px solid #d3d3d3; overflow: hidden;}
+.newsSpacer {padding:10px 0px;}
+.newsSpacer15 {padding:15px 0px;}
+.newsLast {padding: 5px 10px 5px 7px;}
+.newsLast a.title {color:#0073b3; text-decoration: underline;}
+.newsLast a.btn2 {margin-top: 22px;}
+.date, .newsDate {background: url("/images/design/newsDate.gif") left top repeat-x; height:14px; padding: 1px 0px; text-align: center; width: 68px; color:#fff; font-size: 11px;  font-weight: bold;}
+.newsTitle {font-size: 13px; color: #006bab; font-weight: bold; margin-left: 78px; display: block; line-height: 14px; padding-bottom: 3px;}
+.newsImg {width: 69px; padding: 10px 10px 5px 0px;}
+.detail{font-size: 11px; text-decoration: underline; text-shadow: 1px 1px 1px #bfdaea;}
+.newsTitleDetail {font-size: 15px; color: #006bab; font-weight: bold;  padding-bottom: 5px;}
+.newsImgDetail {width: 230px; padding: 10px 15px 10px 0px;}
+/*End Module News*/
+
+
+/*Module Відео*/
+a.categoryLink {font-size: 11px; color:#0950A5; font-weight: bold; text-decoration: none;}
+a.categoryLink:hover {text-decoration: underline;}
+.videoNew { width: 48%; float: left;  padding: 0px 1% 20px 1%;}
+.videoNewImage {background: #f8f8f8; width: 317px; height: 217px; overflow: hidden;}
+.videoNewImage img {padding: 2px; border: 1px solid #e7e6e1;}
+.videoNewSmallImage {/*border: 5px solid #FFF; background: #FFF;*/ margin: 0px 10px 0px 0px; }
+.videoNewImage a.image {display: table-cell; height: 215px; width:315px; vertical-align: middle; text-align: center;}
+.videoNewTitle a{  font-weight: bold;  font-size:  16px; color:#007e50;  padding: 5px 0px 0px 0px;  text-decoration: none; display: block; height: 36px; text-align: left; overflow: hidden; line-height: 17px;}
+.videoShort {font-size: 12px; padding: 5px 10px; background: #f8f8f8; width: 298px; height: 140px; position: relative; }
+.videoShort .short {height: 47px; margin: 5px 0px; overflow: hidden;}
+.videoColumnLastBorder {background: #f8f8f8; padding: 15px 0px; border-bottom: 1px solid #d7d7d7; clear: both; overflow: hidden; }
+
+/*Відео детально*/
+.player { width: 480px; height:395px; border: 1px solid #d8d8d8; background-image: url(/images/design/video.gif); }
+.lastVideos { width: 50%;  }
+.time {background: #ececec; width: 42px; font-size: 11px; font-weight: bold; color:#1f88cd; height: 23px; padding: 11px 0px;  text-align: center;}
+.lastVideos .name {font-size: 12px; color:#515151;  text-decoration: none; display: block; padding: 10px 10px 0px 10px; width: 280px; max-height: 30px; overflow: hidden; }
+.lastCategoryVideo {background: #f8f8f8; margin-top: 10px; }
+.outputVideo {margin: 15px 0px;}
+.videoLast, .imageLast {margin-bottom: 10px; overflow: hidden;}
+/*End Module Відео*/
+
+
+/*Module Фото*/
+#imageLarge{ width: 650px;  min-height: 448px; overflow: hidden;}
+#imageLarge img {padding: 2px; border: 1px solid #e7e6e1;}
+h2.gallery {color:#007e50 !important; }
+.imageBlockDetail {  padding: 15px 0px; margin: 0px -5px; }
+/*End Module Фото*/
+
+
+/*Module Dictionary*/
+#lit_list {overflow: hidden; padding: 20px 0px 25px 0px; border-bottom:1px solid #d3d3d3; width: 100%;}
+#lit_list div {float: left; }
+#lit_list div a {color:#0076c5; font-size: 14px; font-weight: bold; display: block; margin: 0px 3px;}
+#lit_list .item {font-size: 14px; font-weight: bold; display: block; margin: 2px 2px 0px 2px;}
+.dictionaryItem { float: left; background: #d5d5d5 url("/images/design/btns.png") left top repeat-x; background-position: 0px -88px;  height: 19px; color:#000000; font-size: 12px; padding: 3px 5px 0px 5px;  margin-bottom: 5px;}
+.terminItem a { float: left; background: url("/images/design/btns.png") left top repeat-x; background-position: 0px -88px;  height: 16px; color:#000000; font-size: 12px; padding: 1px 2px 0px 2px;  margin-right: 3px; }
+.randomTermin {position: absolute; left:350px; top:10px; height: 85px; width: 300px; overflow: hidden;}
+.randomTermin .short {font-size: 12px; color:#FFF; line-height: 17px;}
+/*End Module Dictionary*/
+
+
+/*Module Ask*/
+.questionContent{padding: 20px 0px 15px 0px;}
+.answerContent {background: #f2f2ef; padding: 10px 15px 10px 60px;}
+.hide {display: none;}
+.form-hint {font-size: 11px;}
+/*End Module Ask*/
+
+
+/*Block Footer Menu*/
+#footerNavBox ul { list-style: none; margin: 0;  overflow: hidden; }
+#footerNavBox ul li { float: left; line-height: 15px; }
+#footerNavBox ul li a { border-left: 1px solid #cfcfcf; color:blue; padding: 0px 4px 0px 4px; font-size: 11px; }
+#footerNavBox ul li:first-child { padding: 0px 0px 0px 4px; }
+#footerNavBox ul .first-child { padding: 0px 0px 0px 4px; }
+#footerNavBox ul li:first-child a { border: 0px; }
+#footerNavBox ul .first-child a { border: 0px; }
+#footerNavBox a.current, #footerNavBox a.current:hover {color:#fadf00;}
+.btm1{margin: 0px 0px 10px 0px; overflow: hidden;}
+/*End Block Footer Menu*/
+
+
+/*Block Page Navigation*/
+.pageNaviClass{text-align:center;float: left;  color: #333333; font-weight: normal; padding-top: 5px;}
+.pageNaviClass a{padding: 1px 3px;color: #333333;}
+.LinkPagesSel{ color: white; padding: 1px 0px; display: block; width: 21px; height: 15px; background: #EEEEEE url(/images/design//icoCounter.jpg) no-repeat;text-align: center;float: left;margin: 0px 2px;}
+.pagesPoints{float: left;margin: 0px 2px;}
+.pagesTable a{display: block;height: 17px;margin: 0px 2px;float: left;}
+.lnk_page:hover{ background-color:yellow; }
+/*End Block Page Navigation*/
+
+/*dealers start*/
+#FeedbackLeftForm{
+    background-color: #e6e7e6;
+    padding: 20px 20px 15px 15px;
+}
+#FeedbackLeftForm h2{
+    color: #3454a1;
+    font-size: 12px;
+}
+#FeedbackLeftForm ul{
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+#FeedbackLeftForm ul li{
+    margin: 0;
+    padding: 0 0 10px 0;
+    list-style: none;
+}
+#FeedbackLeftForm .name_tel{
+    width: 154px !important;
+}
+#FeedbackLeftForm .class_messeg{
+    width: 154px !important;
+}
+.button21{
+    background-color: #3454a1;
+    color: white;
+    font-size: 11px;
+    border:0px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#bagraund_map{
+    position: relative;
+    width: 650px;
+    height: 436px;
+    background-image: url('/images/design/ukrain_map.png');
+    z-index: 0;
+}
+#map_regions{
+    position: absolute;
+}
+.map{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+}
+#dealer_content ul li{
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+.pid_li_dealer{
+    overflow: hidden;
+    padding: 3px 0;
+}
+.dealer_name{
+    padding-bottom: 15px;
+    color: #395bac;
+    font-size: 14px;
+}
+.dealer_name a{
+    color: #395bac;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dealer_map{
+    float: left;
+    width: 155px;
+    text-align: left;
+}
+.dealer_content{
+    float: left;
+    padding-bottom: 10px;
+    max-width: 504px;
+}
+.name_ofis{
+    color: #181818;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.dealer_content_text div{
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+.dealer_content_text div b{
+    color: #181818;
+}
+.dealer_content_text div span{
+    color: #7e7e7e;
+}
+#img_city{
+}
+#coord{
+    position: absolute;
+}
+#block_of_img{/*
+    width: 300px;
+    height: 300px;*/
+    text-align: center;
+}
+.img_absolute{
+    position: absolute;
+    z-index: 100;
+}
+.map_obl{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.allSum{first-letter: uppercase;}
+/*dealers end*/
