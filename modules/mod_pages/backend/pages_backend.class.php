@@ -863,7 +863,7 @@ class PagesBackend extends DynamicPages
 
               //-------------------- Upload Files Start ---------------------
               $this->UploadFile->ShowFormToUpload(NULL,$this->id);
-              $this->UploadImages->ShowFormToUpload(NULL,$this->id);
+              //$this->UploadImages->ShowFormToUpload(NULL,$this->id);
               //$this->UploadVideo->ShowFormToUpload(NULL,$this->id);
               //-------------------- Upload Files End ---------------------
 

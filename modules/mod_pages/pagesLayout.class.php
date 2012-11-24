@@ -350,14 +350,7 @@ class FrontendPages extends DynamicPages{
          }
          else{
             $body = stripslashes($this->page_txt['content']);
-            if(empty($body)){
-                if($this->ShowSubLevelsInContent($this->page)==false)
-                echo $this->multi['_MSG_CONTENT_EMPTY'];
-            }
-            else{
-                echo $body;
-                $this->ShowSubLevelsInContent($this->page);
-            }
+            echo $body;
          }
          $this->ShowUploadFileList($this->page);
          $this->ShowUploadImagesList($this->page);
@@ -374,7 +367,7 @@ class FrontendPages extends DynamicPages{
         if($this->is_comments==1){
             $this->Comments = new CommentsLayout($this->module, $this->page);
             $this->Comments->ShowComments();
-        }
+        
          ?>
 
          <!-- AddThis Button BEGIN -->
@@ -388,6 +381,7 @@ class FrontendPages extends DynamicPages{
          </div>
          <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4c559bfc5d7d23e8"></script>
          <!-- AddThis Button END -->
+         <?}?>
          </div>
          <?
          $this->Form->WriteContentFooter();

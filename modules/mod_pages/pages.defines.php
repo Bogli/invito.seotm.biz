@@ -19,8 +19,8 @@ define("TblModPagesTxt","mod_pages_txt");
 define("Pages_Img_Path_Small","/images/mod_pages/");
 define("Pages_Img_Path",SITE_PATH."/images/mod_pages/");
 
-define("PAGES_USE_SHORT_DESCR", 1);
-define("PAGES_USE_SPECIAL_POS", 1);
-define("PAGES_USE_IMAGE", 1);
-define("PAGES_USE_IS_MAIN", 1);
+define("PAGES_USE_SHORT_DESCR", 0);
+define("PAGES_USE_SPECIAL_POS", 0);
+define("PAGES_USE_IMAGE", 0);
+define("PAGES_USE_IS_MAIN", 0);
 ?>
