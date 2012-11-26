@@ -317,10 +317,21 @@ class PageUser extends Page {
         Последние версии WEB-браузеров доступны для установки на сайтах разработчиков и содержат улучшенные свойства безопасности, повышенную скорость работы, меньшее количество ошибок. Эти простые действия помогут Вам максимально использовать функциональность сайта, избежать ошибок в работе, повысить уровень безопасности.
         </div>
         <![endif]-->
-
+        <div id="rightHeaderFon"></div>
         <div id="wrapper">
-            <div class="menu"><?$this->FrontendPages->ShowHorisontalMenu();?></div>
             <div class="bodyCenter">
+                <div class="wrapperHeader">
+                    <div class="logo"><img src="/images/design/logo.png" alt="Инновационные РЕШЕНИЯ" title="Инновационные РЕШЕНИЯ" /></div>
+                    <div class="slogan1">Инновационные</div>
+                </div>
+                <div class="wrapperCenter">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footerFon">
+            <div class="footerBorder"></div>
+            <div class="footer">
                 <div id="my_d_basket" class="my_d_basket">
                 <?
                 //=== if set error page 404 then show error ===
@@ -346,18 +357,15 @@ class PageUser extends Page {
     */
     function WriteFooter()
     {
-                    ?></div>
-                </div>
-                <?
+                    ?></div><?
                 $year = '2011-'.date("Y");
                 ?>
-                <div class="btm1">
-                    <div style="float:left">Copyright&nbsp;&copy;&nbsp;<?=$year;?></div>
-                    
-                </div>
+        
+                <div>Copyright&nbsp;&copy;&nbsp;Invito Marketing, LLC <?=$year;?></div>
             </div>
-        </body>
-        </html>
+        </div>
+    </body>
+    </html>
     <?
        if( !$this->Is_404() ){
            /* Statistic module */

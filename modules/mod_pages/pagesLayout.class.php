@@ -336,12 +336,6 @@ class FrontendPages extends DynamicPages{
     function ShowContent()
     {
         $name = stripslashes($this->page_txt['pname']);
-        if($this->page!=$this->main_page)
-            $path = $this->ShowPath($this->page);
-        else
-            $path = null;
-        if($this->page!=$this->main_page) $this->Form->WriteContentHeader($name, false,$path);
-        else $this->Form->WriteContentHeader('', false,$path);
 
         ?><div class="subBody"><?
          //if( !$this->IsPublish($this->page) AND !$this->preview ){
@@ -384,7 +378,6 @@ class FrontendPages extends DynamicPages{
          <?}?>
          </div>
          <?
-         $this->Form->WriteContentFooter();
     }// end of function ShowContent
 
     /**

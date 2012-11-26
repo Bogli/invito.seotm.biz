@@ -16,7 +16,7 @@ if (!defined("MAKE_DEBUG")){
     elseif( isset($_COOKIE[SEOCMS_DEBUGNAME]) ){
         define( "MAKE_DEBUG", $_COOKIE[SEOCMS_DEBUGNAME] );
     }
-    else define( "MAKE_DEBUG", "1" );
+    else define( "MAKE_DEBUG", "0" );
 }
 
 define('USE_CACHE', false);
